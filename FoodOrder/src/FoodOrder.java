@@ -13,6 +13,8 @@ public class FoodOrder {
     int coldCoffee = 100;
     int coldrink = 80;
     int icedtea = 80;
+    int pasta = 200;
+    int chickenFry = 150;
     int ch;
     int quantity;
     static int total;
@@ -33,7 +35,9 @@ public class FoodOrder {
         System.out.println("           5.Cold Coffee           100/-");
         System.out.println("           6.Pizza                 200/-");
         System.out.println("           7.Iced Tea              80/- ");
-        System.out.println("           8.Exit                       ");
+        System.out.println("           8.pasta                 200/- ");
+        System.out.println("           9.Chicken Fry           150/- ");
+        System.out.println("           10.Exit                       ");
         System.out.println("======================================================");
         System.out.println("          What Do you Want to Order Today??");
     }// Our Food Menu is ready
@@ -57,7 +61,7 @@ public class FoodOrder {
                 case 1:// French Fries
                     System.out.println("You have Selected French Fries");
                     System.out.println();
-                    System.out.println("Enter the desiered Quantity : ");
+                    System.out.println("Enter the desired Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * frenchFries;
 
@@ -83,7 +87,7 @@ public class FoodOrder {
                 case 4:// Cold Drinks
                     System.out.println("You have Selected Cold Drinks");
                     System.out.println();
-                    System.out.println("Enter the desiered Quantity : ");
+                    System.out.println("Enter the desired Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * coldrink;
 
@@ -91,17 +95,17 @@ public class FoodOrder {
                 case 5:// Cold Coffee
                     System.out.println("You have Selected Cold Coffee");
                     System.out.println();
-                    System.out.println("Enter the desiered Quantity : ");
+                    System.out.println("Enter the desired Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * coldCoffee;
 
                     break;
 
 
-case 6:// Pizza
+                case 6:// Pizza
                     System.out.println("You have Selected Pizza");
                     System.out.println();
-                    System.out.println("Enter the desiered Quantity : ");
+                    System.out.println("Enter the desired Quantity : ");
                     quantity = sc.nextInt();
                     total = total + quantity * pizza;
 
@@ -110,13 +114,29 @@ case 6:// Pizza
                 case 7:// Iced Tea
                     System.out.println("You have Selected Iced Tea");
                     System.out.println();
-                    System.out.println("Enter the desiered Quantity");
+                    System.out.println("Enter the desired Quantity");
                     quantity = sc.nextInt();
                     total = total + quantity * icedtea;
 
                     break;
+                case 8:// Pasta
+                    System.out.println("You have Selected Pasta");
+                    System.out.println();
+                    System.out.println("Enter the desired Quantity");
+                    quantity = sc.nextInt();
+                    total = total + quantity * pasta;
 
-                case 8:// exit
+                    break;
+                case 9:// Chicken Fry
+                    System.out.println("You have Selected Chicken Fry");
+                    System.out.println();
+                    System.out.println("Enter the desired Quantity");
+                    quantity = sc.nextInt();
+                    total = total + quantity * chickenFry;
+
+                    break;
+
+                case 10:// exit
                     System.exit(1);
                     break;
 
